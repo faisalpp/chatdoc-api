@@ -16,11 +16,11 @@ app.use(staticServer('./static'));
 
 app.use(cors()); // 添加跨域处理中间件
 
-app.use(
-  enforceHttps.default({
-    port: 6030,
-  }),
-);
+// app.use(
+//   enforceHttps.default({
+//     port: 6030,
+//   }),
+// );
 
 app.use(
   bodyParser({

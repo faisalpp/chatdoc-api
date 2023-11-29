@@ -16,8 +16,7 @@ router.post(
   '/documents/upload',
   async (ctx, next) => {
     try {
-      const dd =await upload(ctx, next);
-      console.log(dd)
+      const dd = await upload(ctx, next);
     } catch (error) {
       if (error.code === 'LIMIT_FILE_SIZE') {
         ctx.throw(
